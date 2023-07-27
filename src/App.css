@@ -1,0 +1,79 @@
+.App {
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+    height: auto;
+    width: auto;
+}
+.ReactModal__Content{
+    height: 345px !important;
+    width: 640px !important;
+    margin: auto;
+}
+/* .modal__body */
+.modal__buttons{
+    margin-top: 100px !important;
+}
+
+@media screen and (max-width: 1113px) {
+    .sidebar{
+        display: none !important;
+    }
+    .widget{
+        display: none !important;
+    }
+    .qHeader__icons > * {
+        display: none !important;
+    }
+    .qHeader__icons > *:nth-child(1) {
+        display: block !important;
+    }
+}
+@media screen and (max-width: 765px) {
+    .qHeader__Rem > *:nth-child(2) {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .qHeader__Rem > *:nth-child(2) {
+        display: none !important;
+    }
+    .qHeader form {
+        display: none !important;
+    }
+    .feed{
+        width: 90% !important;
+    }
+    .post,.quoraBox{
+        width: 100% !important;
+    }
+    .qHeader__Rem{
+        margin-left: 3px !important;
+    }
+    .qHeader__Rem button {
+        width : 111px !important;
+        margin-left: 5px !important;
+    }
+    .qHeader__logo img {
+        width: 60px !important;
+        height: auto !important;
+    }
+}
+
+.login{
+    position: relative;
+
+}
+.auth-loader{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    width: max-content;
+    height: max-content;
+}
+.facebook-selected{
+    background-color: silver;
+}

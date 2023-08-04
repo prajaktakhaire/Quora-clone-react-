@@ -29,14 +29,30 @@
     }
 }
 @media screen and (max-width: 765px) {
-    .qHeader__Rem > *:nth-child(2) {
+    /* .qHeader__Rem > *:nth-child(2) {
         display: none !important;
+    } */
+    .ReactModal__Content{
+        width: 80vw !important;
+        inset: 0px !important;
+    }
+}
+@media screen and (max-width: 750px) {
+    .login__container{
+        width: 80% !important;
+        margin:  0 auto;
+    }
+    .login__emailPass{
+        padding-left: 0px !important;
     }
 }
 @media screen and (max-width: 700px) {
-    .qHeader__Rem > *:nth-child(2) {
-        display: none !important;
+    .login__auth{
+        flex-direction: column;
     }
+    /* .qHeader__Rem > *:nth-child(2) {
+        display: none !important;
+    } */
     .qHeader form {
         display: none !important;
     }

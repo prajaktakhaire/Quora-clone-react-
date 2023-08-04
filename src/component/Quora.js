@@ -25,7 +25,7 @@ function Quora() {
     <div className="quora">
       <Navbar IsmodalOpen={IsmodalOpen} setIsModalOpen={setIsModalOpen} setPosts={setPosts} setLoading={setLoading} currentLink={currentLink} setCurrentLink={setCurrentLink}/>
       <div className="quora__content">
-        <Sidebar setCurrentLink={setCurrentLink} setLoading={setLoading}/>
+        <Sidebar setCurrentLink={setCurrentLink} currentLink={currentLink} setLoading={setLoading}/>
         {
           (currentLink === "HomeIcon" && !loading) ? <Feed posts={posts} setPosts={setPosts} setIsModalOpen={setIsModalOpen} /> : <Loader/>
         }

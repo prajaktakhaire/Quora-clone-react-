@@ -1,18 +1,18 @@
 import React, {useState} from "react";
 import "../Css/SidebarOptions.css";
 import { Add } from "@mui/icons-material";
-function SidebarOptions({setLoading, setCurrentLink}) {
+function SidebarOptions({setLoading, setCurrentLink, currentLink}) {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const handleClick = (category) => {
     setLoading(true);
-    setSelectedCategory(category);
-    setCurrentLink("HomeIcon")
+    setCurrentLink(category);
+    // setCurrentLink("HomeIcon")
   }
   return (
     <div className="sidebarOptions">
   <div
     onClick={() => handleClick("History")}
-    className={`sidebarOption ${selectedCategory === "History" ? "selectedCategory" : ""}`}
+    className={`sidebarOption ${currentLink === "History" ? "selectedCategory" : ""}`}
   >
     <img
       src="https://qph.cf2.quoracdn.net/main-thumb-t-930-100-cbbsbwijdhpyzlpipejvqpiijhhoaday.jpeg"
@@ -22,7 +22,7 @@ function SidebarOptions({setLoading, setCurrentLink}) {
   </div>
   <div
     onClick={() => handleClick("Business")}
-    className={`sidebarOption ${selectedCategory === "Business" ? "selectedCategory" : ""}`}
+    className={`sidebarOption ${currentLink === "Business" ? "selectedCategory" : ""}`}
   >
     <img
       src="https://qph.cf2.quoracdn.net/main-thumb-t-858-100-VnZbEVtOIGkEHXlnYId9slumV59IPgkA.jpeg"
@@ -32,7 +32,7 @@ function SidebarOptions({setLoading, setCurrentLink}) {
   </div>
   <div
     onClick={() => handleClick("Psychology")}
-    className={`sidebarOption ${selectedCategory === "Psychology" ? "selectedCategory" : ""}`}
+    className={`sidebarOption ${currentLink === "Psychology" ? "selectedCategory" : ""}`}
   >
     <img
       src="https://qph.cf2.quoracdn.net/main-thumb-t-1913-100-B8JrwaVauFzsaTSqXDqoWLCXzQb2mTE9.jpeg"
@@ -42,7 +42,7 @@ function SidebarOptions({setLoading, setCurrentLink}) {
   </div>
   <div
     onClick={() => handleClick("Cooking")}
-    className={`sidebarOption ${selectedCategory === "Cooking" ? "selectedCategory" : ""}`}
+    className={`sidebarOption ${currentLink === "Cooking" ? "selectedCategory" : ""}`}
   >
     <img
       src="https://qph.cf2.quoracdn.net/main-thumb-t-877-100-e7jKHEQr0HExAIA9rlsyHlV6HJyRruEo.jpeg"
@@ -52,7 +52,7 @@ function SidebarOptions({setLoading, setCurrentLink}) {
   </div>
   <div
     onClick={() => handleClick("Music")}
-    className={`sidebarOption ${selectedCategory === "Music" ? "selectedCategory" : ""}`}
+    className={`sidebarOption ${currentLink === "Music" ? "selectedCategory" : ""}`}
   >
     <img
       src="https://qph.cf2.quoracdn.net/main-thumb-t-801-100-Sf8h894FXbQZQit0TeqDrrqS6xw6dwCQ.jpeg"
@@ -62,7 +62,7 @@ function SidebarOptions({setLoading, setCurrentLink}) {
   </div>
   <div
     onClick={() => handleClick("Discover Spaces")}
-    className={`sidebarOption ${selectedCategory === "Discover Spaces" ? "selectedCategory" : ""}`}
+    className={`sidebarOption ${currentLink === "Discover Spaces" ? "selectedCategory" : ""}`}
   >
     <Add />
     <p>Discover Spaces</p>

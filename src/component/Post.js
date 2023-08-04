@@ -170,11 +170,10 @@ function Post({ Id, question, image, timestamp, quoraUser }) {
                   <br />
                   <span
                     style={{
-                      position: "absolute",
-                      color: "gray",
-                      fontSize: "small",
-                      display: "flex",
-                      right: "0px",
+                        textAlign: "right",
+                        display: "block",
+                        width: "100%",
+                        marginBottom: "10px"
                     }}
                   >
                     <span style={{ color: "#b92b27" }}>
